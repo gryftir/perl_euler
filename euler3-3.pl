@@ -5,6 +5,7 @@ use strict;
 my $highval = shift;
 my $max = 5;
 my $n = $highval;
+my $root = int sqrt($highval);
 my @addsum = (0,2,4);
 my $addswitch = 1;
 while ($n % 2 == 0)
@@ -23,7 +24,7 @@ if($n == $max)
 	exit 0;
 }
 $max = 5;
-while($n > $max)
+while(($n > $max) && ($max < $root))
 {	
 while($n % $max == 0)
 	{
