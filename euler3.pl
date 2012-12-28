@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
+use bignum;
 @ARGV == 1 or die "include a number to calculate to";
 my $highval = shift;
 my $max = 5;

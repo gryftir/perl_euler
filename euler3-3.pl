@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
+use bignum;
 @ARGV == 1 or die "include a number to calculate to";
 my $highval = shift;
 my $max = 5;
@@ -24,7 +25,7 @@ if($n == $max)
 	exit 0;
 }
 $max = 5;
-while(($n > $max) && ($max < $root))
+while($n > $max)
 {	
 while($n % $max == 0)
 	{
